@@ -1,0 +1,41 @@
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        * {
+            padding-right: 15px;
+        }
+
+        ul {
+            display: none;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: #114362;
+            }
+
+            @media (min-width: 768px) {
+                display: flex;
+            }
+        }
+
+        i {
+            font-size: 50px;
+            color: #114362;
+        }
+
+        img {
+            width: 40px;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+}

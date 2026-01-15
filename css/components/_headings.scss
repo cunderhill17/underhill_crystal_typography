@@ -1,0 +1,10 @@
+.vertical-heading {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 35px;
+    align-items: center;
+    writing-mode: sideways-lr;
+    font-size: clamp(23px, calc(3.65px + 4.7vw), 60px);
+    font-weight: bold;
+    color: #813B08;
+}
