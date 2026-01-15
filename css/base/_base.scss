@@ -10,4 +10,34 @@
 
 .brand-font {
     font-family: "Alfa Slab One", serif;
+    color: #114362;
+}
+
+.margin-top-large {
+    margin-top: 125px;
+}
+
+.margin-top {
+    margin-top: 25px;
+}
+
+.margin-bottom {
+    margin-bottom: 25px;
+}
+
+.p-font {
+    font-size: clamp(12px, calc(7.82px + 1.015vw), 20px);
+    color: #4A4A4A;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+}
+
+.z-top {
+    z-index: 1000;
 }

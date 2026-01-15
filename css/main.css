@@ -10,6 +10,105 @@
 
 .brand-font {
   font-family: "Alfa Slab One", serif;
+  color: #114362;
+}
+
+.margin-top-large {
+  margin-top: 125px;
+}
+
+.margin-top {
+  margin-top: 25px;
+}
+
+.margin-bottom {
+  margin-bottom: 25px;
+}
+
+.p-font {
+  font-size: clamp(12px, 7.82px + 1.015vw, 20px);
+  color: #4A4A4A;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.z-top {
+  z-index: 1000;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header nav * {
+  padding-right: 15px;
+}
+header nav ul {
+  display: none;
+  list-style-type: none;
+}
+header nav ul a {
+  text-decoration: none;
+  color: #114362;
+}
+@media (min-width: 768px) {
+  header nav ul {
+    display: flex;
+  }
+}
+header nav i {
+  font-size: 50px;
+  color: #114362;
+}
+header nav img {
+  width: 40px;
+}
+@media (min-width: 768px) {
+  header nav img {
+    display: none;
+  }
+}
+
+.vertical-heading {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 35px;
+  align-items: center;
+  writing-mode: sideways-lr;
+  font-size: clamp(23px, 3.65px + 4.7vw, 60px);
+  font-weight: bold;
+  color: #813B08;
+}
+
+/*Styling so that text wraps around the image*/
+@media (min-width: 768px) {
+  .wrap-image {
+    float: left;
+    max-width: 40%;
+    margin: 0 1.5rem 1rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .stop-wrap::after {
+    clear: both;
+  }
+}
+
+/* Styling so that the two images are overlapped */
+.image-staggered {
+  bottom: -100px;
 }
 
 /*Styling for the Grid System */
