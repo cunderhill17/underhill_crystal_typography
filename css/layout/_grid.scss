@@ -146,3 +146,7 @@
     .lg\:col-end-12 {grid-column-end: 12;}
     .lg\:col-end-13 {grid-column-end: 13;}
 }
+
+/* Styling for rows - used in the image gallery */
+
+.row-span-2 { grid-row: span 2 / span 2; }

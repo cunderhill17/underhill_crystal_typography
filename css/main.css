@@ -4,15 +4,22 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background-color: #f6d677;
+}
+
 .hidden {
   display: none;
 }
 
-.brand-font {
-  font-family: "Alfa Slab One", serif;
-  color: #114362;
+/* Center Content */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Spacing - Margin and Padding */
 .margin-top-large {
   margin-top: 125px;
 }
@@ -25,11 +32,32 @@
   margin-bottom: 25px;
 }
 
+/* Font Sizing and Colouring */
+.brand-font-large {
+  font-family: "Alfa Slab One", serif;
+  font-size: 32px;
+  letter-spacing: 5px;
+  color: #114362;
+}
+
+.brand-font-reg {
+  font-family: "Alfa Slab One", serif;
+  font-size: clamp(12px, 7.82px + 1.015vw, 20px);
+  letter-spacing: 3px;
+  color: #114362;
+}
+
 .p-font {
   font-size: clamp(12px, 7.82px + 1.015vw, 20px);
+  line-height: 34px;
   color: #4A4A4A;
 }
 
+.nav-links {
+  font-size: 22px;
+}
+
+/* Element Positioning */
 .pos-relative {
   position: relative;
 }
@@ -40,6 +68,25 @@
 
 .z-top {
   z-index: 1000;
+}
+
+footer {
+  background-color: #114362;
+  padding: 25px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.footer-container div {
+  margin-bottom: 10px;
+}
+.footer-container p {
+  text-align: center;
 }
 
 header {
@@ -71,13 +118,16 @@ header nav i {
   font-size: 50px;
   color: #114362;
 }
-header nav img {
+header nav img.menu {
   width: 40px;
 }
 @media (min-width: 768px) {
-  header nav img {
+  header nav img.menu {
     display: none;
   }
+}
+header nav img.cart {
+  width: 40px;
 }
 
 .vertical-heading {
@@ -89,6 +139,25 @@ header nav img {
   font-size: clamp(23px, 3.65px + 4.7vw, 60px);
   font-weight: bold;
   color: #813B08;
+}
+
+.horizontal-heading {
+  color: #4a4a4a;
+  font-size: 32px;
+}
+
+@media (min-width: 768px) {
+  .image-gallery-single {
+    display: none;
+  }
+}
+.image-gallery {
+  display: none;
+}
+@media (min-width: 768px) {
+  .image-gallery {
+    display: block;
+  }
 }
 
 /*Styling so that text wraps around the image*/
@@ -511,6 +580,10 @@ header nav img {
   .lg\:col-end-13 {
     grid-column-end: 13;
   }
+}
+/* Styling for rows - used in the image gallery */
+.row-span-2 {
+  grid-row: span 2/span 2;
 }
 
 /*# sourceMappingURL=main.css.map */
