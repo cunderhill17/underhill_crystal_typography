@@ -30,12 +30,16 @@ header {
             color: #114362;
         }
 
-        img {
+        img.menu {
             width: 40px;
 
             @media (min-width: 768px) {
                 display: none;
             }
+        }
+
+        img.cart {
+            width: 40px;
         }
     }
 }

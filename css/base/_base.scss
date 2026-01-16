@@ -4,14 +4,23 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    background-color: #f6d677;
+}
+
 .hidden {
     display: none;
 }
 
-.brand-font {
-    font-family: "Alfa Slab One", serif;
-    color: #114362;
+/* Center Content */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* Spacing - Margin and Padding */
 
 .margin-top-large {
     margin-top: 125px;
@@ -25,10 +34,34 @@
     margin-bottom: 25px;
 }
 
+/* Font Sizing and Colouring */
+
+.brand-font-large {
+    font-family: "Alfa Slab One", serif;
+    font-size: 32px;
+    letter-spacing: 5px;
+    color: #114362;
+}
+
+.brand-font-reg {
+    font-family: "Alfa Slab One", serif;
+    font-size: clamp(12px, calc(7.82px + 1.015vw), 20px);
+    letter-spacing: 3px;
+    color: #114362;
+}
+
 .p-font {
     font-size: clamp(12px, calc(7.82px + 1.015vw), 20px);
+    line-height: 34px;
     color: #4A4A4A;
 }
+
+.nav-links {
+    font-size: 22px;
+}
+
+
+/* Element Positioning */
 
 .pos-relative {
     position: relative;
